@@ -18,6 +18,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spacebackground" translatesAutoresizingMaskIntoConstraints="NO" id="buh-MI-PoV">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6x6-Bt-EW3">
+                                <rect key="frame" x="80" y="492" width="254" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Enter the wormhole"/>
+                                <connections>
+                                    <segue destination="q75-Rs-scr" kind="show" id="iRK-j5-Kpz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Red or Blue?" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dj3-gf-0X6">
+                                <rect key="frame" x="80" y="431" width="254" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -28,11 +44,29 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Intergalactic Traveler" id="tI0-93-Knb"/>
+                    <navigationItem key="navigationItem" title="Intergalactic Traveler" id="tI0-93-Knb">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="vCo-dI-6mO"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="109.82142857142857"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tOo-yL-8OS">
+            <objects>
+                <viewController id="q75-Rs-scr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uAN-K1-BbL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iqe-rZ-YMR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zn5-Xg-MuP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ct-mm-3bb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747" y="101"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Dt2-Ql-s5i">
